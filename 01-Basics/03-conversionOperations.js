@@ -27,8 +27,32 @@ let toBoolean = Boolean(isLoggedIn);
 
 let month = 2;
 
-let toNumber = String(month);
+let toString = String(month);
 
-console.log(toNumber);
+// console.log(toString);
 
-// "7" => 7 
+// *********************** Operations ***********************
+
+// Basic Operations
+/*
+console.log(2+2); // Addition
+console.log(2-2); // Subtraction
+console.log(2/2); // Division
+console.log(2*2); // Multiplication
+console.log(2**2); // Power of
+console.log(2%2); // Modulus
+*/
+
+// concatenation
+let fname = 'Zain';
+let lname = 'Umer';
+let fullName = 'Zain ' + 'Umer';
+// console.log(fullName);
+
+// let testing = 1 + 1; => 2
+// let testing = "1" + 1; => "11"
+// let testing = 1 + "1" + 2; => "112"
+// let testing = "1" + 2 + 1; => "121" why JavaScript???
+// let testing = 1 + 2 + "1"; => "31"
+console.log(testing);
+
