@@ -216,3 +216,208 @@ let fullName = 'Zain ' + 'Umer';
 // }
 
 // console.log(pattern(5));
+
+// let num = 3;
+
+// for (let row = 1; row <= num; row++) {
+//     // for (let spaces = 0; spaces <= num; spaces++) {
+        
+        
+//     // }
+
+//     for (let col = 1; col <= row; col++) {
+//         // process.stdout.write(col);
+//         console.log(col)       
+//     }
+//     console.log();
+    
+// }
+
+// function findDiagonals(matrix) {
+//     const mainDiagonal = [];
+//     const secondaryDiagonal = [];
+//     const n = matrix.length;
+//     console.log(n)
+
+//     // Main Diagonal
+//     for (let i = 0; i < n; i++) {
+//         mainDiagonal.push(matrix[i][i]);
+//     }
+
+//     // Secondary Diagonal
+//     for (let i = 0; i < n; i++) {
+//         secondaryDiagonal.push(matrix[i][n - 1 - i]);
+//     }
+
+//     return { mainDiagonal, secondaryDiagonal };
+// }
+
+// // Example 2D array
+// const matrix = [
+//     [11, 2, 4],
+//     [4, 5, 6],
+//     [10, 8, -12]
+// ];
+
+
+
+// const { mainDiagonal, secondaryDiagonal } = findDiagonals(matrix);
+// console.log("Main Diagonal:", mainDiagonal);
+// // console.log("Secondary Diagonal:", secondaryDiagonal);
+
+// let ltrDiagonalSum = 0;
+// let rtlDiagonalSum = 0;
+
+// for(let item of mainDiagonal) {
+//   ltrDiagonalSum += item;
+// }
+
+// for(let item of secondaryDiagonal) {
+//   rtlDiagonalSum += item;
+// }
+
+// let absoluteDifference = Math.abs(ltrDiagonalSum - rtlDiagonalSum);
+
+
+// console.log(ltrDiagonalSum, rtlDiagonalSum)
+// console.log(absoluteDifference)
+
+// const arr = [
+//     [11, 2, 4],
+//     [4, 5, 6],
+//     [10, 8, -12]
+// ];
+
+// function diagonalDifference(arr) {
+//     // Write your code here
+//     const mainDiagonal = [];
+//     const secondaryDiagonal = [];
+//     const arrLength = arr.length;
+    
+//     for(let i=0; i< arrLength; i++) {
+//         mainDiagonal.push(arr[i][i]);
+//     }
+    
+//     for(let i=0; i< arrLength; i++) {
+//         secondaryDiagonal.push(arr[i][arrLength-1-i]);
+//     }
+    
+//     let mainSum = 0;
+//     let secondarySum = 0;
+    
+//     for(let item of mainDiagonal){
+//         mainSum += item;
+//     }
+    
+//     for(let item of secondaryDiagonal){
+//         secondarySum += item;
+//     }
+    
+//     const absoluteDiff = Math.abs(mainSum - secondarySum);
+    
+//     return absoluteDiff;
+
+// }
+
+// console.log(diagonalDifference(arr))
+
+// let num = 12165484613516544874325135145453n;
+// console.log(typeof num)
+// let num2 = BigInt(121654846135165448743251);
+// console.log(typeof num2)
+
+// let num = 10;
+// let sum = 0;
+// let i = 0;
+
+// while(i<=num){
+//     sum += i;
+//     i++;
+// }
+
+// console.log(sum);
+// console.log(i);
+
+// let num = 10;
+// let total = (num*(num+1)/2);
+// console.log(total);
+
+// let num = 10;
+
+// let total = 0;
+
+// for (let i = 0; i <= num; i++) {
+//     total += i;
+// }
+
+// console.log(total)
+
+// let pocketMoney = 3000;
+// for (let date=1; date<=30; date++) {
+//     if (date%2==0) {
+//         continue;
+//     }
+//     if (pocketMoney==0) {
+//         console.log("Your don't have enough money!");
+//         break;
+//     }
+
+//     console.log("Date: "+ date + " Go Out Today!")
+//     pocketMoney -= 300;
+// }
+// let startNum = 1;
+// let endNum = 100;
+
+// for (let num = startNum; num < endNum; num++) {
+//     let i;
+//     for (i = 2; i <= num; i++) {
+//         if (num%i==0) {
+//             let prime = i==num ? `${num} is a Prime` : `${num} is not Prime. It is divisible by ${i}`;
+//             console.log(prime);
+//             break;
+//          } 
+//      }
+// }
+
+let fruits = ["apple", "mango", "grapes"];
+// console.log(typeof fruits);
+// console.log(Array.isArray(fruits));
+
+// .push() method adds element at the end of the array.
+// fruits.push("banana")
+// console.log(fruits);
+
+// .pop() method removes element from the end of the array.
+// console.log(fruits);
+// console.log(fruits.pop())
+
+// .toString() is used to convert array to string
+// let strFruits = fruits.toString();
+// console.log(strFruits);
+
+// .includes() check if the element is present and return in true or false
+// console.log(fruits.includes("apple"));
+// let isfruit = fruits.includes("grapes");
+// console.log(isfruit)
+
+// .indexOf() returns index of provided argument and return -1 if that element doesn't exsist.
+// console.log(fruits.indexOf('grapes'));
+
+// .join() join the array with the given separator
+// console.log(fruits.join('-'));
+
+// .splice(3, 2, "kinnuuuu") adds element on given index as well as index from where to start
+// console.log(fruits);
+// fruits.splice(3, 2, "kinnuuuu");
+// console.log(fruits);
+
+// remove element from begining and return that element
+// fruits.shift();
+// console.log(fruits)
+// add element in the begining 
+// fruits.unshift("apple2")
+// console.log(fruits)
+
+// let s = "face";
+// let strArr = s.sort((a,b) => a-b);
+// console.log(strArr)
