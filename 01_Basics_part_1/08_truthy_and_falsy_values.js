@@ -152,6 +152,41 @@ const a = 85;
 // console.log('4'*5);
 // console.log('24'/5);
 
-
-console.log(typeof Object);
 */
+
+// Truthy and Falsy Values
+
+// Falsy values
+// falsy values are not exactly false but when they are converted into boolean they become falsy values.
+// their are 5 falsy values in JS
+// 0, '', undefined, null, NaN
+
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean(null));
+// console.log(Boolean(NaN));
+// console.log(Boolean(''));
+
+// everything else is a truthy value
+// console.log(Boolean('string'));
+// console.log(Boolean({}));
+
+// So when they are converted into falsy values
+// javascipt convert it automatically or by type coercion
+// it happend when we use logical operator or by logical context.
+
+let money = 452;
+// if (money) {
+//     console.log("Don't spend it all ;)");
+// } else {
+//     console.log('Go get a job!');
+// }
+
+// to check if a variable has some value or not
+
+let width = 0;
+if (width) {
+    console.log('width is defined');
+} else {
+    console.log('width is NOT DEFINED!');
+}

@@ -153,5 +153,147 @@ const a = 85;
 // console.log('24'/5);
 
 
-console.log(typeof Object);
-*/
+
+// Truthy and Falsy Values
+
+// Falsy values
+// falsy values are not exactly false but when they are converted into boolean they become falsy values.
+// their are 5 falsy values in JS
+// 0, '', undefined, null, NaN
+
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean(null));
+// console.log(Boolean(NaN));
+// console.log(Boolean(''));
+
+// everything else is a truthy value
+// console.log(Boolean('string'));
+// console.log(Boolean({}));
+
+// So when they are converted into falsy values
+// javascipt convert it automatically or by type coercion
+// it happend when we use logical operator or by logical context.
+
+let money = 452;
+// if (money) {
+//     console.log("Don't spend it all ;)");
+// } else {
+//     console.log('Go get a job!');
+// }
+
+// to check if a variable has some value or not
+
+let width = 0;
+if (width) {
+    console.log('width is defined');
+} else {
+    console.log('width is NOT DEFINED!');
+}
+
+
+
+// Equality Operator
+
+// strict equality operator
+// let age = '18';
+// if(age === 18) console.log('You are adult (strict)');
+
+// loose equality operator
+// if(age == 18) console.log('You are adult (loose)');
+
+const favourite = Number(prompt('What is your favourite number?'));
+console.log(favourite); 
+console.log(typeof favourite); 
+
+if (favourite === 20) {
+    console.log('20 is an amzaing number');
+} else if(favourite === 12) {
+    console.log('12 is also cool number');
+} else if (favourite === 7) {
+    console.log('7 is mahhh number bro!');
+} else {
+    console.log('Number is not 20 or 12 or 7');
+}
+
+if(favourite !== 20) console.log('Your are correct');
+
+
+
+// Logical operator
+// kya Umar ke pass drivivg license hai?
+// kya Umar ke pass acha vision hai?
+// kya Umar thaka va hai?
+
+const hasDrivingLicense = true;
+const hasGoodVision = true;
+
+// const isUmar = hasDrivingLicense && hasGoodVision;
+
+
+// if (hasDrivingLicense || hasGoodVision) {
+//     console.log('Yo you will make it!!!');
+// } else{
+//     console.log('Not illegible');
+// }
+
+const isTired = false;
+
+if (hasDrivingLicense && hasGoodVision && !isTired) {
+        console.log('Yo you will make it!!!');
+    } else{
+        console.log('Not illegible');
+    }
+
+
+
+    // Switch Statement
+    // const day = 'monday';
+    // switch (day) {
+    //     case 'monday':
+    //         console.log('choose website for clone');
+    //         break;
+    //     case 'tuesday':
+    //         console.log('plan to structure website');
+    //         break;
+    //     case 'wednesday':
+    //     case 'thursday':
+    //         console.log('complete landing page');
+    //         break;
+    //     case 'friday':
+    //         console.log('test and fix bugs');
+    //         break;
+    //     case 'saturday':
+    //     case 'sunday':
+    //         console.log('enjoy your weekend!');
+    //         break;
+    //     default:
+    //         console.log('Invalid day!');
+    //         break;
+    // }
+
+    const day = 'sunday';
+
+    if (day === 'monday') {
+        console.log('choose website for clone');
+    } else if (day === 'tuesday') {
+        console.log('plan to structure website');
+    } else if (day === 'wednesday' || day === 'thursday') {
+        console.log('complete landing page');
+    } else if (day === 'friday') {
+        console.log('test and fix bugs');
+    } else if (day === 'saturday' || day === 'sunday') {
+        console.log('enjoy your weekend!');
+    } else {
+        console.log('Invalid day!');
+    }
+    
+    */
+
+    // Conditional Ternary Operator
+    const age = 23;
+    const drink = age >= 18 ? 'Tea☕' : 'Juice🥤';
+    console.log(drink);
+
+    // its an expression since it is an operator so it produces value
+    console.log(`I want to drink ${age >= 18 ? 'Tea☕' : 'Juice🥤'}`);
