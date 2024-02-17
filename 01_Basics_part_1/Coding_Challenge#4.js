@@ -13,7 +13,7 @@ Test data:
 Hints:
 § To calculate 20% of a value, simply multiply it by 20/100 = 0.2
 § Value X is between 50 and 300, if it's >= 50 && <= 300 �
-*/
+
 
 
 // Test data 1
@@ -22,9 +22,4 @@ const tip = billValue >= 50 && billValue <=300 ? billValue * (15/100) : billValu
 
 // console.log(`The bill was ${billValue}, the tip was ${tip} and the total value ${billValue + tip}`);
 
-function foo() {
-   return 'hello'
-}
-
-const result = foo();
-console.log(result);
+*/

@@ -18,5 +18,14 @@ console.log(accountId);
 console.table([accountId,accountEmail,accountPass,accountCity,accountStatus]);
 
     let keyword have function block scope while var have globle scope
+
+
+
+    // function foo() {
+//    return 'hello'
+// }
+
+// const result = foo();
+// console.log(result);
 */
 
