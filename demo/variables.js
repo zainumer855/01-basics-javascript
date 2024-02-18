@@ -29,3 +29,20 @@ console.table([accountId,accountEmail,accountPass,accountCity,accountStatus]);
 // console.log(result);
 */
 
+const zain = {
+    fname: 'Zain',
+    lname: 'Umer',
+    age: 2024-2001,
+    job: 'Web Developer',
+    friends: ['Ali', 'Yusaf', 'Bilal', 'Ahmad']
+}
+
+// console.log(zain);
+
+// const userInfo = prompt('Select the property you want: fname, lname, age, job, friends');
+// if (userInfo) {
+//     console.log(zain[userInfo]);
+// } else {
+//     console.log('Wrong request')
+    
+// }
