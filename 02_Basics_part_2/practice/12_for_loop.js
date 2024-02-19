@@ -348,5 +348,17 @@ console.log(zain2['calcAge']());
 console.log(zain2.getSummary());
 console.log(zain2);
 
-*/
 
+
+// For Loop
+// is used to perform any task repeatedly
+// starts with the initializer
+// a condition
+// and updating the currtent value based on condition
+
+// lets print total days in a month
+for(let rep = 1; rep <= 30; rep++){
+    console.log(`Weight lifted repeations ${rep} 🏋️`);
+}
+
+*/

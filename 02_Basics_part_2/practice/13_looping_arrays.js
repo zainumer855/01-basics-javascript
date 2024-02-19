@@ -348,5 +348,75 @@ console.log(zain2['calcAge']());
 console.log(zain2.getSummary());
 console.log(zain2);
 
-*/
 
+
+// For Loop
+// is used to perform any task repeatedly 
+// starts with the initializer
+// a condition
+// and updating the currtent value based on condition
+
+
+// lets print total days in a month
+for(let rep = 1; rep <= 30; rep++){
+    console.log(`Weight lifted repeations ${rep} 🏋️`);
+}
+
+
+
+// Looping Arrays
+const zain = [
+    'Zain',
+    'Umer',
+    2024-2001,
+    'Web Developer',
+    ['Ali', 'Yusaf', 'Bilal', 'Ahmad'],
+    true
+]
+
+const type = [];
+
+for(let i=0; i<zain.length; i++){
+    // reading elements in array
+    // console.log(zain[i], ` -> type is of: ${typeof zain[i]}`);
+
+    // adding elements in a new array
+    // type[i] = typeof zain[i];
+
+    // their are many ways to add elements in new array
+    type.push(typeof zain[i]);
+
+}
+
+console.log(type);
+
+const years = [1990, 1999, 2001, 2004, 2012];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2024-years[i]);
+    
+}
+
+console.log(ages)
+
+// continue and break
+
+// continue
+// will skip the current iteration based on condition and move to next iteration
+console.log('--- ONLY STRINGS ---')
+for (let i = 0; i < zain.length; i++){
+    if (typeof zain[i] !== 'string') continue;
+    console.log(zain[i]);
+}
+
+// break
+// will terminate the whole loop based on condition
+console.log('--- BREAK ON NUMBER');
+
+for (let i = 0; i < zain.length; i++){
+    if (typeof zain[i] === 'number') break;
+    console.log(zain[i]);
+}
+
+*/
