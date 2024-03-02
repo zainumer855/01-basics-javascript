@@ -458,6 +458,7 @@ while(rep <=10){
     rep++;
 }
 
+
 // we should use while when we don't know what how many times the loop will run
 let dice = Math.trunc(Math.random()* 6+1);
 // console.log(dice);
