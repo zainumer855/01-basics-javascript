@@ -23,7 +23,7 @@ Test data for 6.: First, use players 'Davies', 'Muller', 'Lewandowski' and 'Kimm
 
 GOOD LUCK �
 */
-
+const teamNames = ["Bayern Munich", "Borrussia Dortmund"];
 const game = {
   team1: "Bayern Munich",
   team2: "Borrussia Dortmund",
@@ -90,16 +90,16 @@ const players1Final = ["Thiago", "Coutinho", "Perisic", ...player1];
 const {
   odds: { team1, x: draw, team2 },
 } = game;
-console.log(team1, draw, team2);
+// console.log(team1, draw, team2);
 
 // 6. Write a function ('printGoals') that receives an arbitrary number of player names (not an array) and prints each of them to the console, along with the number of goals that were scored in total (number of player names passed in)
 
 // Test data for 6.: First, use players 'Davies', 'Muller', 'Lewandowski' and 'Kimmich'. Then, call the function again with players from game.scored
 
 function printGoals(...playersName) {
-  console.log(`${playersName.length} goals were scored`);
+  // console.log(`${playersName.length} goals were scored`);
   for (let i = 0; i < playersName.length; i++) {
-    console.log(playersName[i]);
+    // console.log(playersName[i]);
   }
 }
 
@@ -110,4 +110,32 @@ function printGoals(...playersName) {
 
 // 7. The team with the lower odd is more likely to win. Print to the console which team is more likely to win, without using an if/else statement or the ternary operator.
 
-team1 < team2 && console.log("Team 1 is more likely to win");
+// team1 < team2 && console.log("Team 1 is more likely to win");
+
+// for (const [i, player] of Object.entries(game.scored)) {
+//   console.log(`Goal ${Number(i) + 1}: ${player}`);
+// }
+
+const scored = [...game.scored.entries()];
+// console.log(scored);
+
+for (const [i, player] of scored) {
+  // console.log(`Goal ${i + 1}: ${player}`);
+}
+
+// console.log(Object.values(game.odds));
+const score = Object.values(game.odds);
+let sum = 0;
+for (const value of score) {
+  sum += value;
+}
+// console.log(sum / score.length);
+
+const entries = Object.entries(game.odds);
+// console.log(entries);
+for (const [team, score] of entries) {
+  const teamStr = team === "x" ? "draw" : `victory ${game[team]}`;
+  console.log(`Odd of ${teamStr}: ${score}`);
+}
+
+// console.log(Object.entries(game));

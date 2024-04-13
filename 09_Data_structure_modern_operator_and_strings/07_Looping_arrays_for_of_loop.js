@@ -58,30 +58,11 @@ const restaurant = {
   },
 };
 
-const rest1 = {
-  name: "Monal",
-  guests: 0,
-};
+const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
 
-const rest2 = {
-  name: "Egg Spectation",
-  owner: "Peter",
-};
+// for (const item of menu) console.log(item);
 
-// short circut || operator
-// rest1.guests = rest1.guests || -1;
-// rest2.guests = rest2.guests || -1;
+// but how we can access index of an item here if we want index of each item we can use .entries() method which gives an array with [index, item]
+for (const [i, el] of menu.entries()) console.log(`${i + 1}: ${el}`);
 
-// rest1.owner = rest1.owner && "<Anonmyous>";
-// rest2.owner = rest2.owner && "<Anonmyous>";
-
-// short circut && operator
-rest1.owner &&= "<Anonmyous>";
-rest2.owner &&= "<Anonmyous>";
-
-console.log(rest1);
-console.log(rest2);
-
-// the nullish coalescing operator
-rest1.guests ??= -1;
-rest2.guests ??= -1;
+// console.log(...menu.entries());
